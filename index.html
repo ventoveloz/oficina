@@ -5,63 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LaboCarmo 217</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --bg-dark: #222;
+      --bg-light: #fff;
+      --bg-accent: #eee;
+      --text-dark: #000;
+      --text-light: #fff;
+      --primary: #444;
+    }
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background: #f4f4f4;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
     }
     header {
-      background: #222;
-      color: #fff;
-      padding: 1.5rem;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      padding: 1rem;
       text-align: center;
     }
     section.hero {
       background: url('https://source.unsplash.com/featured/?urban,community') no-repeat center center/cover;
       color: white;
-      padding: 5rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
     section.hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.8rem;
     }
     section.hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto;
+      font-size: 1rem;
+      margin-top: 0.5rem;
     }
     section.info {
-      padding: 2rem;
-      background: #fff;
+      padding: 1.5rem 1rem;
+      background: var(--bg-light);
     }
     .info h2 {
-      margin-top: 0;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
     }
     .info ul {
       list-style: none;
-      padding: 0;
     }
     .info ul li {
-      background: #eee;
-      margin-bottom: 1rem;
+      background: var(--bg-accent);
+      margin-bottom: 0.75rem;
       padding: 1rem;
-      border-left: 5px solid #444;
-    }
-    footer {
-      background: #222;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.9rem;
+      border-left: 4px solid var(--primary);
+      font-size: 0.95rem;
     }
     .qr-container {
       display: flex;
       justify-content: center;
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
     .qr-container img {
-      width: 150px;
+      width: 120px;
+      height: auto;
+    }
+    footer {
+      background: var(--bg-dark);
+      color: var(--text-light);
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (min-width: 600px) {
+      section.hero h1 {
+        font-size: 2.5rem;
+      }
+      .info ul li {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -87,7 +110,7 @@
     <div class="qr-container">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/5521997083434" alt="QR Code WhatsApp">
     </div>
-    <p style="text-align:center; margin-top: 1rem;">Fale com a gente no WhatsApp</p>
+    <p style="text-align:center; margin-top: 0.5rem; font-size: 0.9rem;">Fale com a gente no WhatsApp</p>
   </section>
 
   <footer>
