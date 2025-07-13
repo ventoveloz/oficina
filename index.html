@@ -6,12 +6,11 @@
   <title>LaboCarmo 217</title>
   <style>
     :root {
-      --bg-dark: #222;
-      --bg-light: #fff;
-      --bg-accent: #eee;
-      --text-dark: #000;
-      --text-light: #fff;
-      --primary: #444;
+      --color-dark: #1e1e1e;
+      --color-light: #ffffff;
+      --color-primary: #fca311;
+      --color-secondary: #14213d;
+      --color-bg: #f4f4f4;
     }
     * {
       box-sizing: border-box;
@@ -19,46 +18,53 @@
       padding: 0;
     }
     body {
-      font-family: system-ui, sans-serif;
-      background: var(--bg-light);
-      color: var(--text-dark);
-      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-dark);
     }
     header {
-      background: var(--bg-dark);
-      color: var(--text-light);
-      padding: 1rem;
+      background-color: var(--color-secondary);
+      color: var(--color-light);
+      padding: 1.5rem;
       text-align: center;
     }
+    header h1 {
+      font-size: 2rem;
+      color: var(--color-primary);
+    }
     section.hero {
-      background: url('https://source.unsplash.com/featured/?urban,community') no-repeat center center/cover;
-      color: white;
-      padding: 3rem 1rem;
+      background-color: var(--color-primary);
+      color: var(--color-dark);
+      padding: 2rem 1rem;
       text-align: center;
     }
     section.hero h1 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
     section.hero p {
-      font-size: 1rem;
       margin-top: 0.5rem;
+      font-size: 1rem;
     }
-    section.info {
-      padding: 1.5rem 1rem;
-      background: var(--bg-light);
-    }
-    .info h2 {
-      font-size: 1.4rem;
+    .section-block {
+      padding: 2rem 1rem;
+      background-color: var(--color-light);
       margin-bottom: 1rem;
     }
-    .info ul {
+    .section-block h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--color-secondary);
+      border-left: 4px solid var(--color-primary);
+      padding-left: 0.5rem;
+    }
+    .section-block ul {
       list-style: none;
     }
-    .info ul li {
-      background: var(--bg-accent);
-      margin-bottom: 0.75rem;
+    .section-block ul li {
+      background-color: #eaeaea;
       padding: 1rem;
-      border-left: 4px solid var(--primary);
+      margin-bottom: 0.75rem;
+      border-radius: 5px;
       font-size: 0.95rem;
     }
     .qr-container {
@@ -67,54 +73,59 @@
       margin-top: 1rem;
     }
     .qr-container img {
-      width: 120px;
+      width: 110px;
       height: auto;
     }
+    .whatsapp-text {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
     footer {
-      background: var(--bg-dark);
-      color: var(--text-light);
+      background-color: var(--color-secondary);
+      color: var(--color-light);
       text-align: center;
       font-size: 0.85rem;
       padding: 1rem;
-      margin-top: 2rem;
-    }
-    @media (min-width: 600px) {
-      section.hero h1 {
-        font-size: 2.5rem;
-      }
-      .info ul li {
-        font-size: 1rem;
-      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>LaboCarmo 217</h1>
-    <p>Prototipando ideias com o entorno. Discreto, útil, transformador.</p>
+    <p>Entre o improviso e a invenção, nasce o que é útil para todos.</p>
   </header>
 
   <section class="hero">
-    <h1>Um laboratório urbano invisível</h1>
-    <p>Um espaço de testes, encontros e experimentos. Você usa, observa, sugere. Nós aprendemos juntos.</p>
+    <h1>Urbanismo Discreto</h1>
+    <p>Uma oficina funcionando. Um laboratório escondido. Um bairro em transformação silenciosa.</p>
   </section>
 
-  <section class="info">
-    <h2>O que está rolando:</h2>
+  <section class="section-block">
+    <h2>Oficina – Atendimentos Normais</h2>
     <ul>
-      <li><strong>Bancada de ferramentas comunitárias:</strong> experimente usar e dizer o que achou.</li>
-      <li><strong>Ponto de recarga USB:</strong> teste gratuito com power bank solar.</li>
-      <li><strong>Painel de avisos do bairro:</strong> deixe um recado ou escaneie um QR para saber mais.</li>
-      <li><strong>Lava-Pés 2.0 escondido no canto:</strong> quer testar? peça.</li>
+      <li><strong>Manutenção de motos e carros:</strong> pequenos reparos, revisões e trocas básicas.</li>
+      <li><strong>Serviços rápidos:</strong> atendimento no ato para moradores e entregadores.</li>
+      <li><strong>Rede de ajuda técnica:</strong> assistência informal entre vizinhos, peças reaproveitadas.</li>
+    </ul>
+  </section>
+
+  <section class="section-block">
+    <h2>Laboratório – Prototipagens Sociais</h2>
+    <ul>
+      <li><strong>Bancada de uso livre:</strong> ferramentas comunitárias para pequenos consertos.</li>
+      <li><strong>Recarga solar:</strong> ponto USB alimentado por power bank testado no local.</li>
+      <li><strong>Painel de avisos:</strong> QR codes, recados manuais e espaço para ideias do bairro.</li>
+      <li><strong>Lava-Pés camuflado:</strong> projeto em fase de testes com retorno da comunidade.</li>
     </ul>
     <div class="qr-container">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/5521997083434" alt="QR Code WhatsApp">
     </div>
-    <p style="text-align:center; margin-top: 0.5rem; font-size: 0.9rem;">Fale com a gente no WhatsApp</p>
+    <p class="whatsapp-text">Fale conosco via WhatsApp</p>
   </section>
 
   <footer>
-    &copy; 2025 LaboCarmo217 – prototipando no detalhe, sem alarde.
+    &copy; 2025 LaboCarmo217 – Feito no detalhe, entre graxa e protótipo.
   </footer>
 </body>
 </html>
