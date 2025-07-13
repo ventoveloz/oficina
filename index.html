@@ -4,128 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LaboCarmo 217</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --color-dark: #1e1e1e;
-      --color-light: #ffffff;
-      --color-primary: #fca311;
-      --color-secondary: #14213d;
-      --color-bg: #f4f4f4;
+      --color-bg: #f9f9f9;
+      --color-text: #111;
+      --color-accent: #00b894;
+      --color-dark: #2d3436;
     }
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--color-bg);
-      color: var(--color-dark);
+      font-family: 'Inter', sans-serif;
+      background: var(--color-bg);
+      color: var(--color-text);
     }
     header {
-      background-color: var(--color-secondary);
-      color: var(--color-light);
-      padding: 1.5rem;
+      padding: 1.2rem;
+      background: var(--color-dark);
+      color: white;
       text-align: center;
     }
     header h1 {
-      font-size: 2rem;
-      color: var(--color-primary);
+      font-size: 1.8rem;
     }
-    section.hero {
-      background-color: var(--color-primary);
-      color: var(--color-dark);
+    header p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+    .hero {
+      background: linear-gradient(to right, #00b894, #55efc4);
       padding: 2rem 1rem;
       text-align: center;
+      color: #fff;
     }
-    section.hero h1 {
-      font-size: 1.6rem;
+    .hero h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
     }
-    section.hero p {
-      margin-top: 0.5rem;
+    .hero p {
       font-size: 1rem;
     }
-    .section-block {
-      padding: 2rem 1rem;
-      background-color: var(--color-light);
-      margin-bottom: 1rem;
+    section {
+      padding: 1.5rem 1rem;
+      max-width: 700px;
+      margin: auto;
     }
-    .section-block h2 {
+    h2 {
       font-size: 1.3rem;
       margin-bottom: 1rem;
-      color: var(--color-secondary);
-      border-left: 4px solid var(--color-primary);
+      border-left: 4px solid var(--color-accent);
       padding-left: 0.5rem;
     }
-    .section-block ul {
+    ul {
       list-style: none;
+      display: grid;
+      gap: 0.8rem;
     }
-    .section-block ul li {
-      background-color: #eaeaea;
+    li {
+      background: white;
       padding: 1rem;
-      margin-bottom: 0.75rem;
-      border-radius: 5px;
-      font-size: 0.95rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
     .qr-container {
       display: flex;
       justify-content: center;
-      margin-top: 1rem;
+      margin: 1rem 0;
     }
     .qr-container img {
       width: 110px;
-      height: auto;
     }
     .whatsapp-text {
       text-align: center;
       font-size: 0.9rem;
-      margin-top: 0.5rem;
+      color: #444;
     }
     footer {
-      background-color: var(--color-secondary);
-      color: var(--color-light);
+      background: #222;
+      color: #aaa;
+      padding: 1rem;
       text-align: center;
       font-size: 0.85rem;
-      padding: 1rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>LaboCarmo 217</h1>
-    <p>Entre o improviso e a invenção, nasce o que é útil para todos.</p>
+    <p>Oficina viva. Bairro em teste. Tudo misturado com propósito.</p>
   </header>
 
-  <section class="hero">
-    <h1>Urbanismo Discreto</h1>
-    <p>Uma oficina funcionando. Um laboratório escondido. Um bairro em transformação silenciosa.</p>
-  </section>
+  <div class="hero">
+    <h1>Laboratório urbano camuflado</h1>
+    <p>Ideias nascem onde ninguém espera: entre um conserto e um café.</p>
+  </div>
 
-  <section class="section-block">
-    <h2>Oficina – Atendimentos Normais</h2>
+  <section>
+    <h2>🚗 Oficina – Atendimentos regulares</h2>
     <ul>
-      <li><strong>Manutenção de motos e carros:</strong> pequenos reparos, revisões e trocas básicas.</li>
-      <li><strong>Serviços rápidos:</strong> atendimento no ato para moradores e entregadores.</li>
-      <li><strong>Rede de ajuda técnica:</strong> assistência informal entre vizinhos, peças reaproveitadas.</li>
+      <li><strong>Manutenção express:</strong> óleo, freios, elétrica e serviços rápidos.</li>
+      <li><strong>Atendimento local:</strong> foco em quem mora, trabalha ou passa pela região.</li>
+      <li><strong>Reaproveitamento criativo:</strong> peças com segunda chance e ajuda entre vizinhos.</li>
     </ul>
   </section>
 
-  <section class="section-block">
-    <h2>Laboratório – Prototipagens Sociais</h2>
+  <section>
+    <h2>🧪 Labo – Microinovações testadas no cotidiano</h2>
     <ul>
-      <li><strong>Bancada de uso livre:</strong> ferramentas comunitárias para pequenos consertos.</li>
-      <li><strong>Recarga solar:</strong> ponto USB alimentado por power bank testado no local.</li>
-      <li><strong>Painel de avisos:</strong> QR codes, recados manuais e espaço para ideias do bairro.</li>
-      <li><strong>Lava-Pés camuflado:</strong> projeto em fase de testes com retorno da comunidade.</li>
+      <li><strong>Bancada livre:</strong> ferramentas disponíveis para pequenos ajustes.</li>
+      <li><strong>Energia alternativa:</strong> carregadores com fonte solar e testes de autonomia.</li>
+      <li><strong>QRs e murais:</strong> informações úteis, avisos do bairro e interações rápidas.</li>
+      <li><strong>Lava-pés oculto:</strong> protótipo em observação – só para curiosos.</li>
     </ul>
     <div class="qr-container">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/5521997083434" alt="QR Code WhatsApp">
     </div>
-    <p class="whatsapp-text">Fale conosco via WhatsApp</p>
+    <p class="whatsapp-text">Converse direto com a equipe pelo WhatsApp</p>
   </section>
 
   <footer>
-    &copy; 2025 LaboCarmo217 – Feito no detalhe, entre graxa e protótipo.
+    &copy; 2025 LaboCarmo 217 – Prototipagem discreta para transformações reais.
   </footer>
 </body>
 </html>
