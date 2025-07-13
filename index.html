@@ -3,28 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oficina Marcelo Cano</title>
+  <title>LaboCarmo 217</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    section.hero {
+      background: url('https://source.unsplash.com/featured/?urban,community') no-repeat center center/cover;
+      color: white;
+      padding: 5rem 1rem;
+      text-align: center;
+    }
+    section.hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    section.hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    section.info {
+      padding: 2rem;
+      background: #fff;
+    }
+    .info h2 {
+      margin-top: 0;
+    }
+    .info ul {
+      list-style: none;
+      padding: 0;
+    }
+    .info ul li {
+      background: #eee;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-left: 5px solid #444;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .qr-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .qr-container img {
+      width: 150px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Oficina de Mecânica, Vidros Elétricos e Radiadores</h1>
-    <p>Endereço: Carmo Neto 217 - Cidade Nova</p>
+    <h1>LaboCarmo 217</h1>
+    <p>Prototipando ideias com o entorno. Discreto, útil, transformador.</p>
   </header>
 
-  <main>
-    <section>
-      <h2>Serviços</h2>
-      <ul>
-        <li>Manutenção mecânica completa</li>
-        <li>Instalação e conserto de vidros elétricos</li>
-        <li>Radiadores - venda e reparo</li>
-      </ul>
-    </section>
-    
-    <section>
-      <h2>Contato</h2>
-      <p><a href="https://wa.me/5521997083434" target="_blank">📞 Fale conosco no WhatsApp</a></p>
-    </section>
-  </main>
+  <section class="hero">
+    <h1>Um laboratório urbano invisível</h1>
+    <p>Um espaço de testes, encontros e experimentos. Você usa, observa, sugere. Nós aprendemos juntos.</p>
+  </section>
+
+  <section class="info">
+    <h2>O que está rolando:</h2>
+    <ul>
+      <li><strong>Bancada de ferramentas comunitárias:</strong> experimente usar e dizer o que achou.</li>
+      <li><strong>Ponto de recarga USB:</strong> teste gratuito com power bank solar.</li>
+      <li><strong>Painel de avisos do bairro:</strong> deixe um recado ou escaneie um QR para saber mais.</li>
+      <li><strong>Lava-Pés 2.0 escondido no canto:</strong> quer testar? peça.</li>
+    </ul>
+    <div class="qr-container">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/5521997083434" alt="QR Code WhatsApp">
+    </div>
+    <p style="text-align:center; margin-top: 1rem;">Fale com a gente no WhatsApp</p>
+  </section>
+
+  <footer>
+    &copy; 2025 LaboCarmo217 – prototipando no detalhe, sem alarde.
+  </footer>
 </body>
 </html>
